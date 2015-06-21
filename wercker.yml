@@ -3,11 +3,10 @@ build:
   steps:
     - arjen/hugo-build:
       version: "0.14"
-
 deploy:
   steps:
     - s3sync:
-      key_id: $KEY
-      key_secret: $SECRET
-      bucket_url: $URL
-      source_dir: public/
+        key_id: $KEY
+        key_secret: $SECRET
+        bucket_url: $URL
+        source_dir: public/
