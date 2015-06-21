@@ -1,4 +1,4 @@
-baseurl = "http://twistedcode.org/"
+baseurl = "http://twistedcode.org"
 languageCode = "en-us"
 title = "TwistedCode"
 MetaDataFormat = "toml"
