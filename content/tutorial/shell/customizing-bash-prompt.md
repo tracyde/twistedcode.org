@@ -2,6 +2,7 @@
 categories = ["shell", "bash", "howto"]
 date = "2007-11-18T22:27:04-05:00"
 description = "How to customize your bash prompt"
+draft = "false"
 keywords = ["bash", "shell"]
 title = "Customizing your bash prompt"
 
