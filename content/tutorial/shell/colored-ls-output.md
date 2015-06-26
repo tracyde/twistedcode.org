@@ -38,7 +38,7 @@ export TERM=xterm
 
 To make your `TERM` environment variable persistent you add either of the commands above to your `$HOME/.bash_profile` or `$HOME/.bashrc` just like we did for the alias definition.
 
-To customize the color `ls` displays you must modify the `LS_COLORS` environment variable. `LS_COLORS` is formatted as a string of variables separated by colons. Changing `LS_COLORS` is out of the scope of this howto.
+To customize the color `ls` displays you must modify the `LS_COLORS` environment variable. `LS_COLORS` is formatted as a string of variables separated by colons. Changing `LS_COLORS` is out of the scope of this howto. I have explained the `LS_COLORS` variable in detail [here](/tutorial/shell/ls-colors-explained/).
 
 ## Creating an Alias
 
