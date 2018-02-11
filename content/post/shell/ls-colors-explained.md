@@ -8,7 +8,7 @@ title = "LS_COLORS Explained"
 
 +++
 
-In my previous [article](/tutorial/shell/colored-ls-output/) I showed you how to make the `ls` command display colored output; now I am going to show you how to customize what colors get displayed. We are going to use the `LS_COLORS` environment variable to accomplish this task.
+In my previous [article](/post/shell/colored-ls-output/) I showed you how to make the `ls` command display colored output; now I am going to show you how to customize what colors get displayed. We are going to use the `LS_COLORS` environment variable to accomplish this task.
 
 You can change your `LS_COLORS` environment variable by setting it in your `$HOME/.bash_profile` or `$HOME/.bashrc` file. The syntax for `LS_COLORS` is as follows:
 

@@ -10,7 +10,7 @@ title = "Customizing your bash prompt"
 
 I came to OS X from the wonderful world of Linux; upon doing so I really missed my customized terminal prompt; after all, the default Mac OS X prompt is really boring and blah.
 
-{{< figure src="/tutorial/images/terminal_default.png" alt="Default OS X Terminal" >}}
+{{< figure src="/post/images/terminal_default.png" alt="Default OS X Terminal" >}}
 
 Customizing the default shell prompt not only makes the terminal that much more exciting, it will also help you remember which system you are currently on and the directory you are about to run a command in (Yea!, no more incessant `pwd` commands).  This is especially useful for those late night pesky phone calls letting you know that you have to come into work early, really, really early; to fix the server that the underpaid incompetent third string sysadmin was supposed to be watching!  Arriving on site with multiple windows open mixed with sleep deprivation can have some very devastating results.  Running shutdown or init in the wrong window can really hurt.
 
@@ -168,7 +168,7 @@ PS1='\[\033[01;32m\]\u\[\033[01;34m\]::\[\033[01;31m\]\h \[\033[00;34m\]{ \[\033
 
 Which looks like this:
 
-{{< figure src="/tutorial/images/terminal_tweaked.png" alt="My Custom Bash Terminal" >}}
+{{< figure src="/post/images/terminal_tweaked.png" alt="My Custom Bash Terminal" >}}
 
 The `PS1` string does not span multiple lines.  I decided to use `\[033[` instead of `\e[` to maximize compatibility between different terminals (I like to take my custom shell everywhere I go).  If you would like a breakdown of my prompt feel free to ask in the comments below.
 
