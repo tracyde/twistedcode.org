@@ -1,20 +1,26 @@
-+++
-categories = ["shell", "bash", "howto"]
-date = "2008-04-13T21:39:59-04:00"
-description = "Explanation of LS_COLORS and associated parameters"
-draft = "false"
-keywords = ["bash", "shell"]
-title = "LS_COLORS Explained"
-
-+++
+---
+title: "LS_COLORS Explained"
+date: "2008-04-13T21:39:59-04:00"
+categories:
+  - shell
+  - howto
+tags:
+  - bash
+draft: "false"
+keywords:
+  - bash
+  - shell
+thumbnailImagePosition: left
+thumbnailImage: /post/images/terminal_ls_tweaked.png
+---
 
 In my previous [article](/post/shell/colored-ls-output/) I showed you how to make the `ls` command display colored output; now I am going to show you how to customize what colors get displayed. We are going to use the `LS_COLORS` environment variable to accomplish this task.
 
 You can change your `LS_COLORS` environment variable by setting it in your `$HOME/.bash_profile` or `$HOME/.bashrc` file. The syntax for `LS_COLORS` is as follows:
 
-```bash
+{{< codeblock lang="bash" >}}
 LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:*.deb=90'
-```
+{{< /codeblock >}}
 
 The parameters for `LS_COLORS` (`di`, `fi`, `ln`, `pi`, etc) refer to different file types:
 
@@ -76,9 +82,9 @@ Code   | Color
 
 These codes can also be combined with one another:
 
-```bash
+{{< codeblock lang="bash" >}}
 di=5;34;43
-```
+{{< /codeblock >}}
 
 Setting the `LS_COLORS` `di` parameter to the above example will make directories appear in flashing blue text with an orange background (just because flashing text is available doesn't mean you should use it!)
 

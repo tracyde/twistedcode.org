@@ -1,12 +1,18 @@
-+++
-categories = ["shell", "bash", "howto"]
-date = "2007-11-18T22:27:04-05:00"
-description = "How to customize your bash prompt"
-draft = "false"
-keywords = ["bash", "shell"]
-title = "Customizing your bash prompt"
-
-+++
+---
+title: "Customizing your bash prompt"
+date: "2007-11-18T22:27:04-05:00"
+categories:
+  - shell
+  - howto
+tags:
+  - bash
+draft: "false"
+keywords:
+  - bash
+  - shell
+thumbnailImagePosition: left
+thumbnailImage: /post/images/terminal_tweaked.png
+---
 
 I came to OS X from the wonderful world of Linux; upon doing so I really missed my customized terminal prompt; after all, the default Mac OS X prompt is really boring and blah.
 
@@ -18,9 +24,9 @@ Customizing the default shell prompt not only makes the terminal that much more 
 
 The primary Bash shell prompt is customized by setting the $PS1 shell environment variable.  In order to see what your current prompt is set to you must `echo $PS1`:
 
-```bash
+{{< codeblock lang="bash" >}}
 echo $PS1
-```
+{{< /codeblock >}}
 
 Characters prefixed by a backslash (`\`) are actually variables that get expanded.  Here is a list of all Bash prompt variables as described in the PROMPTING section of the BASH(1) man page.
 
@@ -58,28 +64,28 @@ Variable Name  | Description
 
 Set your new prompt by manipulating the $PS1 variable.
 
-```bash
+{{< codeblock lang="bash" >}}
 export PS1='\h:\W \u\$ '
-```
+{{< /codeblock >}}
 
 That would make your prompt look like this:
 
-```bash
+{{< codeblock lang="bash" >}}
 hostname:~ username$
-```
+{{< /codeblock >}}
 
 To keep your settings for the next Bash shell, place a line in your `$HOME/.bashrc` that looks like this:
 
-```bash
+{{< codeblock lang="bash" >}}
 PS1='\h:\W \u\$ '
-```
+{{< /codeblock >}}
 
 ### *Mac users note the following*
 
 Due to the way OS X and the Terminal application handle command emulation you have to create the file `$HOME/.bash_profile` and enter the following line:
-```bash
+{{< codeblock lang="bash" >}}
 source ~/.bashrc
-```
+{{< /codeblock >}}
 
 Once you have done this every Terminal window you open up will have your custom prompt.
 
@@ -87,14 +93,14 @@ Once you have done this every Terminal window you open up will have your custom 
 
 `$PS1` is not the only shell variable that affects your prompt.  `$PS2` is the secondary prompt.  The secondary prompt shows up in command line loops:
 
-```bash
+{{< codeblock lang="bash" >}}
 hostname:~ username$ export PS2="--> "
 hostname:~ username$ for x in $(seq 3); do
 --> echo $x
 --> done
 1 2 3
 hostname:~ username$
-```
+{{< /codeblock >}}
 
 `$PS3` and `$PS4` also exist.  From the Bash Reference Manual:
 
@@ -106,18 +112,18 @@ Variable Name  | Description
 `PS4`          | the value is the prompt printed before the command line is echoed when the `-x` option is set (see The Set Builtin).  The first character of `PS4` is replicated multiple times, as necessary, to indicate multiple levels of indirection.  The default is `'+ '`.
 `PROMPT_COMMAND`  | if set, the value is interpreted as a command to execute before the printing of each primary prompt (`$PS1`).  `$PROMPT_COMMAND` can be used in clever ways to run a command before each primary prompt display.  See below for an example
 
-```bash
+{{< codeblock lang="bash" >}}
 hostname:~ username$ export PROMPT_COMMAND='echo -n "$(uptime | cut -d',' -f1) "'<br />
 14:33:01 up 6 days hostname:~ username$
-```
+{{< /codeblock >}}
 
 ## Time to Colorize!
 
 Some of you might want to present your shell prompt using color.  This is especially useful for privileged shells.  Lets make the root shell display using red:
 
-```bash
+{{< codeblock lang="bash" >}}
 hostname:~ username$ export PS1="\e[01;31m\h:\W \u\$ \e[00m"
-```
+{{< /codeblock >}}
 
 This might look a little confusing so let's break it down.
 
@@ -131,9 +137,9 @@ Escape Code  | Description
 
 In this example if your username is alex, your hostname is 'hades', and you are currently in your $HOME directory the resulting prompt will look like:
 
-```bash
+{{< codeblock lang="bash" >}}
 hades:~ alex$ 
-```
+{{< /codeblock >}}
 
 ## Bash Color Escape Codes
 
@@ -162,9 +168,9 @@ White        | `1;37`
 
 Just in case you were wondering what I have set my prompt to here we go:
 
-```bash
+{{< codeblock lang="bash" >}}
 PS1='\[\033[01;32m\]\u\[\033[01;34m\]::\[\033[01;31m\]\h \[\033[00;34m\]{ \[\033[01;34m\]\w \[\033[00;34m\]}\[\033[01;32m\]-> \[\033[00m\]'
-```
+{{< /codeblock >}}
 
 Which looks like this:
 
