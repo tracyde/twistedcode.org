@@ -11,12 +11,12 @@ keywords:
   - bash
   - shell
 thumbnailImagePosition: left
-thumbnailImage: /post/images/terminal_ls_tweaked.png
+thumbnailImage: http://res.cloudinary.com/http-twistedcode-org/image/upload/v1519490262/terminal_ls_tweaked.png
 ---
 
 Unix uses the `ls` command to list the contents of a directory. By default `ls` displays all directories and files the same way, leaving you without the ability to quickly determine what type of files you are looking at (in Unix everything is a file). Here is an screenshot showing the default output of `ls` on OS X:
 
-{{< figure src="/post/images/terminal_ls_default.png" alt="Default OS X ls output" >}}
+{{< figure src="http://res.cloudinary.com/http-twistedcode-org/image/upload/v1519490261/terminal_ls_default.png" alt="Default OS X ls output" >}}
 
 `ls` has the ability to color code different file types by passing the `--color` option to `ls`. For example, type the following command at your shell prompt to see colorized output:
 
@@ -26,7 +26,7 @@ ls --color
 
 Here is what that command looks like:
 
-{{< figure src="/post/images/terminal_ls_tweaked.png" alt="OS X tweaked ls output" >}}
+{{< figure src="http://res.cloudinary.com/http-twistedcode-org/image/upload/v1519490262/terminal_ls_tweaked.png" alt="OS X tweaked ls output" >}}
 
 If you get an error statement after running the last command then you most likely do not have the GNU version of `ls` installed. You can download the GNU version of `ls` by downloading and installing the [GNU Coreutils](http://www.gnu.org/software/coreutils/) package for your OS.
 

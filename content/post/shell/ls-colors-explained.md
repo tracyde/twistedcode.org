@@ -11,7 +11,7 @@ keywords:
   - bash
   - shell
 thumbnailImagePosition: left
-thumbnailImage: /post/images/terminal_ls_tweaked.png
+thumbnailImage: http://res.cloudinary.com/http-twistedcode-org/image/upload/v1519490262/terminal_ls_tweaked.png
 ---
 
 In my previous [article](/post/shell/colored-ls-output/) I showed you how to make the `ls` command display colored output; now I am going to show you how to customize what colors get displayed. We are going to use the `LS_COLORS` environment variable to accomplish this task.
