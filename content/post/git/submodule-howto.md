@@ -2,8 +2,8 @@
 title: "Git Submodule: howto"
 date: "2018-04-03T17:38:02-04:00"
 categories:
-  - howto
   - git
+  - howto
 tags:
   - git
 draft: "false"
