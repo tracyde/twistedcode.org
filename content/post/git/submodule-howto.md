@@ -24,7 +24,9 @@ Setting up a submodule in a project is broken down into just a few steps
 2. Add & Commit
 3. Update submodule
 
-*__Update submodule__* is a task that will need to be performed whenever there is an update to the embedded repository that you would like to add.
+{{< hl-text yellow >}}
+Update submodule is a task that will need to be performed whenever there is an update to the embedded repository that you would like to add.
+{{< /hl-text >}}
 
 ## Add submodule
 
