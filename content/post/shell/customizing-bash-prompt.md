@@ -34,7 +34,7 @@ Variable Name  | Description
 -------------  | -------------
 `\a`           | an ASCII bell character (07)
 `\d`           | the date in "Weekday Month Date" format (e.g., "Tue May 26")
-`\D{format}`   | the format is passed to strftime(3) and the result is inserted into the prompt string; an empty format results in a locale-specific time representation. The braces are required.
+`\D{format}`   | the format is passed to strftime(3) and the result is inserted into the prompt string; an empty format results in a locale-specific time representation.  *__The braces are required__*.
 `\e`           | an ASCII escape character (033)
 `\h`           | the hostname up to the first `.`
 `\H`           | the full hostname
@@ -108,7 +108,7 @@ Variable Name  | Description
 -------------  | ------------
 `PS1`          | the primary prompt string.  The default value is `'\s-\v\$ '`.
 `PS2`          | the secondary prompt string.  The default value is `'> '`.
-`PS3`          | the value of this variable is used as the prompt for the select command. If this variable is not set, the select command prompts with `'#? '`.
+`PS3`          | the value of this variable is used as the prompt for the select command.  If this variable is not set, the select command prompts with `'#? '`.
 `PS4`          | the value is the prompt printed before the command line is echoed when the `-x` option is set (see The Set Builtin).  The first character of `PS4` is replicated multiple times, as necessary, to indicate multiple levels of indirection.  The default is `'+ '`.
 `PROMPT_COMMAND`  | if set, the value is interpreted as a command to execute before the printing of each primary prompt (`$PS1`).  `$PROMPT_COMMAND` can be used in clever ways to run a command before each primary prompt display.  See below for an example
 

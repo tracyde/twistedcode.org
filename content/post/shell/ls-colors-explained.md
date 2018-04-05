@@ -14,9 +14,9 @@ thumbnailImagePosition: left
 thumbnailImage: http://res.cloudinary.com/http-twistedcode-org/image/upload/v1519490262/terminal_ls_tweaked.png
 ---
 
-In my previous [article](/post/shell/colored-ls-output/) I showed you how to make the `ls` command display colored output; now I am going to show you how to customize what colors get displayed. We are going to use the `LS_COLORS` environment variable to accomplish this task.
+In my previous [article](/post/shell/colored-ls-output/) I showed you how to make the `ls` command display colored output; now I am going to show you how to customize what colors get displayed.  We are going to use the `LS_COLORS` environment variable to accomplish this task.
 
-You can change your `LS_COLORS` environment variable by setting it in your `$HOME/.bash_profile` or `$HOME/.bashrc` file. The syntax for `LS_COLORS` is as follows:
+You can change your `LS_COLORS` environment variable by setting it in your `$HOME/.bash_profile` or `$HOME/.bashrc` file.  The syntax for `LS_COLORS` is as follows:
 
 {{< codeblock lang="bash" >}}
 LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:*.deb=90'
@@ -37,7 +37,7 @@ Paramater Name   | File Type
  mi              | Non-existent file pointed to by a symbolic link (visible when you type ls -l)
  ex              | File which is executable (ie. has 'x' set in permissions).
 
-The `*.deb=90` parameter in the example above tells `ls` to display any files ending with a `.deb` extension using the color specified, 90 or dark grey in this case. This can be applied to any types of files (eg. you could use `*.jpg=33` to make JPEG files appear orange). Any number of parameters can go into the `LS_COLORS` variable, as long as the parameters are separated by colons.
+The `*.deb=90` parameter in the example above tells `ls` to display any files ending with a `.deb` extension using the color specified, 90 or dark grey in this case.  This can be applied to any types of files (eg. you could use `*.jpg=33` to make JPEG files appear orange).  Any number of parameters can go into the `LS_COLORS` variable, as long as the parameters are separated by colons.
 
 ## Color Codes
 
