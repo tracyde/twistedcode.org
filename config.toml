@@ -22,7 +22,7 @@ canonifyURLs = true
 
 [author]
     name = "Derek Tracy"
-    bio = "Full-stack engineer, architect, circuit bender, and hardware hacker <br /><br /> **\"Learning never exhausts the mind.\"** <br />_― Leonardo da Vinci_"
+    bio = "Full-stack engineer, cloud architect, circuit bender, and hardware hacker <br /><br /> **\"Learning never exhausts the mind.\"** <br />_― Leonardo da Vinci_"
     job = "Senior Platform Architect"
     location = "USA"
     # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
